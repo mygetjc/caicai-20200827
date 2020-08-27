@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:${DATASOURCE_DBTYPE:mysql}://${DATASOURCE_HOST:localhost}:${DATASOURCE_PORT:3306}/fund?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=GMT
+    username: ${DATASOURCE_USERNAME:root}
+    password: ${DATASOURCE_PASSWORD:123456}
+
+logging:
+  level:
+    com.springboot.cloud: debug
+    java.sql.PreparedStatement: debug
+  path: logs/
+  file:
+    max-size: 1GB

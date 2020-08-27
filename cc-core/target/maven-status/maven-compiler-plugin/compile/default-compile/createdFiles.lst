@@ -1,0 +1,8 @@
+com\caicai\core\exception\ServiceException.class
+com\caicai\core\util\UserContextHolder$1.class
+com\caicai\core\exception\ErrorType.class
+com\caicai\core\util\UserContextHolder$SingletonHolder.class
+com\caicai\core\util\UserContextHolder.class
+com\caicai\core\entity\Result.class
+com\caicai\core\exception\BaseException.class
+com\caicai\core\exception\SystemErrorType.class

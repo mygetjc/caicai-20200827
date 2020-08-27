@@ -1,0 +1,143 @@
+2020-08-27 17:33:45.419  INFO 32952 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='fund.yml'}]}
+2020-08-27 17:33:45.459  INFO 32952 --- [main] com.caicai.fund.FundApplication          : No active profile set, falling back to default profiles: default
+2020-08-27 17:33:45.929  INFO 32952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-27 17:33:45.941  INFO 32952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2020-08-27 17:33:46.029  WARN 32952 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.caicai.fund]' package. Please check your configuration.
+2020-08-27 17:33:46.108  INFO 32952 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eb712a01-f7a8-3091-adc5-fc90d0e2f9f3
+2020-08-27 17:33:46.158  INFO 32952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ae71283] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:33:46.171  INFO 32952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$57011580] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:33:46.408  INFO 32952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-08-27 17:33:46.429  INFO 32952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-27 17:33:46.429  INFO 32952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-08-27 17:33:46.554  INFO 32952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-27 17:33:46.555  INFO 32952 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1085 ms
+2020-08-27 17:33:46.733  WARN 32952 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'fundController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fundInfoServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.caicai.fund.dao.FundInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-27 17:33:46.734  INFO 32952 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-27 17:33:46.749  INFO 32952 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-27 17:33:46.836 ERROR 32952 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'fundController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fundInfoServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.caicai.fund.dao.FundInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.caicai.fund.FundApplication.main(FundApplication.java:17) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fundInfoServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.caicai.fund.dao.FundInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.caicai.fund.dao.FundInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 35 common frames omitted
+
+2020-08-27 17:35:25.855  INFO 15696 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='fund.yml'}]}
+2020-08-27 17:35:25.893  INFO 15696 --- [main] com.caicai.fund.FundApplication          : No active profile set, falling back to default profiles: default
+2020-08-27 17:35:26.319  INFO 15696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-27 17:35:26.330  INFO 15696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2020-08-27 17:35:26.469  INFO 15696 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=498e7ae9-0a4e-3977-bdc8-600a51dea61a
+2020-08-27 17:35:26.520  INFO 15696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$489c4247] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:35:26.536  INFO 15696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$64b64544] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:35:26.746  INFO 15696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-08-27 17:35:26.764  INFO 15696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-27 17:35:26.765  INFO 15696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-08-27 17:35:26.879  INFO 15696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-27 17:35:26.879  INFO 15696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 977 ms
+2020-08-27 17:35:28.016  WARN 15696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-27 17:35:28.016  INFO 15696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-27 17:35:28.020  WARN 15696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-27 17:35:28.020  INFO 15696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-27 17:35:28.213  INFO 15696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-27 17:35:28.861  INFO 15696 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-08-27 17:35:28.861  INFO 15696 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-08-27 17:35:28.861  INFO 15696 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-08-27 17:35:28.874  INFO 15696 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-08-27 17:35:28.895  WARN 15696 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalCacheConfig' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.alicp.jetcache.anno.support.ConfigMap' available
+2020-08-27 17:35:28.896  INFO 15696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-27 17:35:28.898  INFO 15696 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-27 17:35:28.910  INFO 15696 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-27 17:35:29.025 ERROR 15696 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.alicp.jetcache.anno.support.ConfigMap' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.alicp.jetcache.anno.support.ConfigMap' in your configuration.
+
+2020-08-27 17:36:46.042  INFO 9816 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='fund.yml'}]}
+2020-08-27 17:36:46.077  INFO 9816 --- [main] com.caicai.fund.FundApplication          : No active profile set, falling back to default profiles: default
+2020-08-27 17:36:46.462  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-27 17:36:46.473  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2020-08-27 17:36:46.651  INFO 9816 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1904ca0f-9691-30c1-9d4f-01ba5b2a4253
+2020-08-27 17:36:46.712  INFO 9816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94d0cb72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:36:46.727  INFO 9816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b0eace6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 17:36:46.987  INFO 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-08-27 17:36:47.011  INFO 9816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-27 17:36:47.011  INFO 9816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-08-27 17:36:47.141  INFO 9816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-27 17:36:47.141  INFO 9816 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1057 ms
+2020-08-27 17:36:48.318  WARN 9816 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-27 17:36:48.318  INFO 9816 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-27 17:36:48.321  WARN 9816 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-27 17:36:48.321  INFO 9816 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-27 17:36:48.502  INFO 9816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-27 17:36:49.181  INFO 9816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-08-27 17:36:49.181  INFO 9816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-08-27 17:36:49.181  INFO 9816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-08-27 17:36:49.195  INFO 9816 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-08-27 17:36:49.977  INFO 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-27 17:36:49.980  INFO 9816 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.73.158.15","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@fund","stopped":false,"weight":1.0} to beat map.
+2020-08-27 17:36:50.028  INFO 9816 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@fund with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.73.158.15","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1.0}
+2020-08-27 17:36:50.037  INFO 9816 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, fund 10.73.158.15:8081 register finished
+2020-08-27 17:36:50.039  INFO 9816 --- [main] com.caicai.fund.FundApplication          : Started FundApplication in 6.41 seconds (JVM running for 7.72)
+2020-08-27 17:36:50.042  INFO 9816 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] fund.yml+DEFAULT_GROUP
+2020-08-27 17:36:50.042  INFO 9816 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=fund.yml, group=DEFAULT_GROUP, cnt=1
+2020-08-27 17:37:29.588  INFO 9816 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-27 17:37:29.588  INFO 9816 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-27 17:37:29.594  INFO 9816 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-27 17:37:45.700  WARN 9816 --- [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-08-27 17:37:53.328  INFO 9816 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-27 17:37:53.399  INFO 9816 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

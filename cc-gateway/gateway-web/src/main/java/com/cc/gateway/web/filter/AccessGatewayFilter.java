@@ -56,23 +56,22 @@ public class AccessGatewayFilter implements GlobalFilter {
         String method = request.getMethodValue();
         String url = request.getPath().value();
         log.debug("url:{},method:{},headers:{}", url, method, request.getHeaders());
-        return chain.filter(exchange);
         //不需要网关签权的url
-//        if (authService.ignoreAuthentication(url)) {
-//            return chain.filter(exchange);
-//        }
-//
-//        //调用签权服务看用户是否有权限，若有权限进入下一个filter
-//        System.out.println("是否有权限:"+permissionService.permission(authentication, url, method));
-//        if (permissionService.permission(authentication, url, method)) {
-//            ServerHttpRequest.Builder builder = request.mutate();
-//            //TODO 转发的请求都加上服务间认证token
-//            builder.header(X_CLIENT_TOKEN, "TODO zhoutaoo添加服务间简单认证");
-//            //将jwt token中的用户信息传给服务
-//            builder.header(X_CLIENT_TOKEN_USER, getUserToken(authentication));
-//            return chain.filter(exchange.mutate().request(builder.build()).build());
-//        }
-//        return unauthorized(exchange);
+        if (authService.ignoreAuthentication(url)) {
+            return chain.filter(exchange);
+        }
+
+        //调用签权服务看用户是否有权限，若有权限进入下一个filter
+        System.out.println("是否有权限:"+permissionService.permission(authentication, url, method));
+        if (permissionService.permission(authentication, url, method)) {
+            ServerHttpRequest.Builder builder = request.mutate();
+            //TODO 转发的请求都加上服务间认证token
+            builder.header(X_CLIENT_TOKEN, "TODO zhoutaoo添加服务间简单认证");
+            //将jwt token中的用户信息传给服务
+            builder.header(X_CLIENT_TOKEN_USER, getUserToken(authentication));
+            return chain.filter(exchange.mutate().request(builder.build()).build());
+        }
+        return unauthorized(exchange);
     }
 
     /**

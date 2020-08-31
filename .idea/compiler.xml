@@ -7,9 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cc-fund" />
-        <module name="cc-user" />
         <module name="cc-core" />
+        <module name="gateway-web" />
+        <module name="cc-user" />
+        <module name="authentization-server" />
         <module name="sys-admin" />
+        <module name="authentication-server" />
+        <module name="gateway-admin" />
+        <module name="authentication-client" />
       </profile>
     </annotationProcessing>
   </component>

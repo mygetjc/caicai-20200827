@@ -1,0 +1,5 @@
+com\cc\auth\client\service\AuthService.class
+com\cc\auth\client\te.class
+com\cc\auth\client\service\impl\AuthServiceImpl.class
+com\cc\auth\client\provider\AuthProvider.class
+com\cc\auth\client\provider\AuthProvider$AuthProviderFallback.class

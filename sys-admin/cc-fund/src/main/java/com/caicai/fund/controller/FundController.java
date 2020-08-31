@@ -1,6 +1,6 @@
 package com.caicai.fund.controller;
 
-import com.caicai.core.entity.Result;
+import com.cc.core.entity.Result;
 import com.caicai.fund.entity.form.FundInfoQuery;
 import com.caicai.fund.entity.po.FundInfo;
 import com.caicai.fund.service.FundInfoService;
@@ -25,7 +25,7 @@ import javax.validation.Valid;
  */
 @Slf4j
 @RestController
-@RequestMapping("/fund")
+@RequestMapping("/fundInfo")
 public class FundController {
 
     @Resource

@@ -1,0 +1,22 @@
+
+Q
+java:S3740N"/Provide the parametrized type for this generic.(ÃÁÿœýÿÿÿÿ8ó÷ú’Ä.
+Q
+java:S3740Y"/Provide the parametrized type for this generic.(Ÿþ»áúÿÿÿÿ8ó÷ú’Ä.
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇÄÏ²8ó÷ú’Ä.
+q
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.core.JsonProcessingException'.(ßÔïÇûÿÿÿÿ8¶šŽ“Ä.
+Q
+java:S3740;"/Provide the parametrized type for this generic.(Žõ²°úÿÿÿÿ8ó÷ú’Ä.
+Q
+java:S3740l"/Provide the parametrized type for this generic.(£—ßáøÿÿÿÿ8ó÷ú’Ä.
+]	java:S1252"<This block of commented-out lines of code should be removed.(áõéôüÿÿÿÿ8Ø“Ä.
+e
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8¶šŽ“Ä.
+X	java:S125@"<This block of commented-out lines of code should be removed.(â½ÂÅ8ß““Ä.
+]
+java:S1128"@Remove this unused import 'org.springframework.beans.BeanUtils'.(ŠðÄÜ8¶šŽ“Ä.
+X	java:S125E"<This block of commented-out lines of code should be removed.(áŠ˜ö8‰ýŽ“Ä.
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8‡¤ý’Ä.
+X	java:S125c"<This block of commented-out lines of code should be removed.(ðó³É8ø“Ä.

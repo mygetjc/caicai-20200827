@@ -13,6 +13,8 @@
         <module>cc-core</module>
         <module>sys-admin/cc-fund</module>
         <module>sys-admin/cc-user</module>
+        <module>cc-gateway</module>
+        <module>cc-auth</module>
     </modules>
 
     <dependencyManagement>

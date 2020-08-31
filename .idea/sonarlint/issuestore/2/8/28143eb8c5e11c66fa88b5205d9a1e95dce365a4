@@ -1,0 +1,24 @@
+
+‡
+java:S4165/"eRemove this useless assignment; "routeId" already holds the assigned value along all execution paths.(€ÖÉõøÿÿÿÿ8ÇÂì’Ä.
+^	java:S107"BConstructor has 12 parameters, which is greater than 7 authorized.(ªë¦‘8¶§ë’Ä.
+†
+java:S41655"iRemove this useless assignment; "createdTime" already holds the assigned value along all execution paths.(‹£ ¦8ÇÂì’Ä.
+‚
+java:S41658"eRemove this useless assignment; "filters" already holds the assigned value along all execution paths.(éıŒ¸8ÇÂì’Ä.
+†
+java:S41651"dRemove this useless assignment; "status" already holds the assigned value along all execution paths.(‰«Íúÿÿÿÿ8ÇÂì’Ä.
+ƒ
+java:S41652"aRemove this useless assignment; "uri" already holds the assigned value along all execution paths.(µÓ¡£ıÿÿÿÿ8ÇÂì’Ä.
+Š
+java:S41659"hRemove this useless assignment; "predicates" already holds the assigned value along all execution paths.(àÕÇŠøÿÿÿÿ8ÇÂì’Ä.
+†
+java:S41653"dRemove this useless assignment; "orders" already holds the assigned value along all execution paths.(Šã­ışÿÿÿÿ8ÇÂì’Ä.
+‰
+java:S41654"gRemove this useless assignment; "createdBy" already holds the assigned value along all execution paths.(ï‹šèøÿÿÿÿ8ÇÂì’Ä.
+‹
+java:S41650"iRemove this useless assignment; "description" already holds the assigned value along all execution paths.(·ĞÛÿüÿÿÿÿ8ÇÂì’Ä.
+‰
+java:S41656"gRemove this useless assignment; "updatedBy" already holds the assigned value along all execution paths.(İÄôüÿÿÿÿ8ÇÂì’Ä.
+†
+java:S41657"iRemove this useless assignment; "updatedTime" already holds the assigned value along all execution paths.(öº¾‹8ÇÂì’Ä.
